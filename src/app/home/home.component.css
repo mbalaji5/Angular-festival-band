@@ -1,0 +1,89 @@
+.float--left{
+    float:left;
+}
+.float--right{
+    float:right;
+}
+.Header{
+    font-family:'Austin News Deck';
+    font-weight:600;
+    font-size:20px;
+    color:#333333;
+    text-align: center;
+    border: 1px solid #b2b4b6;
+    background-color: #f2f3f4;
+}
+.Header .race{
+    font-weight:400;
+    font-style:italic;
+}
+.entry {
+    padding: 10px 0 8px 10px;
+    border-bottom: 1px solid #DDDDDD;
+} 
+.entry .score{
+    width:88px;
+    font-family:'Telesans Agate';
+    font-size:14px;
+}
+.entry .score .time{
+    font-weight:700;
+    color:#003E5C;
+}
+.entry .pos{
+    width:48px;
+    font-family:'Austin News Deck';
+    font-weight:600;
+    font-size:32px;
+    color:#d85C2B;
+}
+.entry .details{
+    width:200px;
+    font-family:'Telesans Agate';
+    font-size:14px;
+}
+.entry .show {
+    font-family:'Telesans Agate';
+    font-size:14px;
+    padding-left: 24px;
+}
+.entry .details .name{
+    font-weight: 600;
+    color: #333333;
+    font-family: sans-serif;
+}
+.entry .details .team{
+    font-weight:400;
+    color:#666666;
+    padding-left: 12px;
+}
+.car-grid {
+    zoom: 1;
+}
+.car-grid:before,
+.car-grid:after {
+    content: "";
+    display: table;
+}
+.car-details-container {
+    border: 1px solid #b2b4b6;
+}
+.car-grid:after {
+    clear: both;
+}
+.error {
+    background-color: #d64b4b;
+    text-align: center;
+    max-width: 50%;
+    margin: 2% 20%;
+    color: #252628;
+}
+.grp-btn {
+    float: right;
+    background-color: #3987d6;
+    border: 1px solid #b6c6d7;
+    width: 10%;
+    cursor: pointer;
+    color: #f2f3f4;
+    font-weight: 700;
+}

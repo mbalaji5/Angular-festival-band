@@ -1,0 +1,33 @@
+<div class="Header">
+    <span class="race">Music Festival</span>
+    <button *ngIf="!showGroupByGrid" class="grp-btn" (click)="groupAlbhabetically()">Group By</button>
+    <button *ngIf="showGroupByGrid" class="grp-btn" (click)="groupAlbhabetically()">Hide Group By</button>
+</div>
+<div *ngIf="!showGroupByGrid" class="container car-details-container">
+  <div *ngFor="let item of structuredData" class="entry  car-grid" id="entry0">
+    <div *ngFor="let bands of item" class="details float--left">
+      <div class="name">{{bands.recordLabel}}</div>
+      <div class="team">&nbsp;</div>
+      <div class="team">{{bands.name}}</div>
+      <div class="team">&nbsp;</div>
+      <div class="show float--left">{{bands.prop}}</div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="showGroupByGrid" class="container car-details-container">
+    <div *ngFor="let item of groupedCarDetails" class="entry  car-grid" id="entry0">
+        <div *ngFor="let bands of item.children" class="details float--left">
+        <div class="name">{{bands.name}}</div>
+        <div class="team">{{bands.recordLabel}}</div>
+        <div class="team" *ngIf="!bands.recordLabel">&nbsp;</div>
+        <div class="show float--left">{{bands.name}}</div>
+        <div class="show float--left" *ngIf="!bands.name">&nbsp;</div>
+      </div>   
+    </div>
+  </div> -->
+
+
+<div *ngIf="errorMessage" class="error">
+  <span>{{errorMessage}} </span>
+</div>    
