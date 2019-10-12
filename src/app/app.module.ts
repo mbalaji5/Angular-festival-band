@@ -7,11 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { DataService } from './services/app.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RecordLabelComponent } from './record-label/record-label.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    RecordLabelComponent
   ],
   imports: [
     BrowserModule,

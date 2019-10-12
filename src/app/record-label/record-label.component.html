@@ -1,0 +1,25 @@
+<p>
+  record-label works!
+</p>
+<div *ngFor="let i of displayCarList">
+  <ul>
+    {{
+      i.label
+    }}
+    <div *ngFor="let j of i.band">
+      <ul>
+        {{
+          j.name
+        }}
+        <div *ngFor="let k of j.festivals">
+          <ul>
+            {{
+              k.name
+            }}
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </ul>
+</div>
+<ul></ul>
